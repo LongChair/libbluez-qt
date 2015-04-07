@@ -4,7 +4,7 @@
   <interface name="org.bluez.Adapter">
     <method name="GetProperties">
       <arg type="a{sv}" direction="out"/>
-      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
     </method>
     <method name="SetProperty">
       <arg type="s" direction="in"/>
@@ -57,7 +57,7 @@
     <signal name="DeviceFound">
       <arg type="s"/>
       <arg type="a{sv}"/>
-      <annotation name="com.trolltech.QtDBus.QtTypeName.In1" value="QVariantMap"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.In1" value="QVariantMap"/>
     </signal>
     <signal name="DeviceDisappeared">
       <arg type="s"/>

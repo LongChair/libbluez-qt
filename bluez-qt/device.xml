@@ -4,7 +4,7 @@
   <interface name="org.bluez.Device">
     <method name="GetProperties">
       <arg type="a{sv}" direction="out"/>
-      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
     </method>
     <method name="SetProperty">
       <arg type="s" direction="in"/>
@@ -13,7 +13,7 @@
     <method name="DiscoverServices">
       <arg type="s" direction="in"/>
       <arg type="a{us}" direction="out"/>
-      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="UIntStringMap"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="UIntStringMap"/>
     </method>
     <method name="CancelDiscovery"/>
     <method name="Disconnect"/>
