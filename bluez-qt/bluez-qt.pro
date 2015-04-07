@@ -56,8 +56,8 @@ SOURCES += bluetoothagentadaptor.cpp \
 	audio.cpp \
 	input.cpp
 
-target.path = $$INSTALL_ROOT/usr/lib
-headers.path = $$INSTALL_ROOT/usr/include/bluez-qt5/
+target.path = $$INSTALL_ROOT$$PREFIX/usr/lib
+headers.path = $$INSTALL_ROOT$$PREFIX/usr/include/bluez-qt5/
 headers.files = $$HEADERS
 INSTALLS += target \
 	headers
@@ -65,12 +65,12 @@ INSTALLS += target \
 CONFIG += create_pc create_prl
 QMAKE_PKGCONFIG_DESCRIPTION = Bluez Qt Bindings Library
 QMAKE_PKGCONFIG_INCDIR = $$headers.path
-pkgconfig.path = $$INSTALL_ROOT/usr/lib/pkgconfig
+pkgconfig.path = $$INSTALL_ROOT$$PREFIX/usr/lib/pkgconfig
 pkgconfig.files = bluez-qt5.pc
 
 INSTALLS += pkgconfig
 
-dbusfiles.path = $$INSTALL_ROOT/etc/dbus-1/system.d
+dbusfiles.path = $$INSTALL_ROOT$$PREFIX/etc/dbus-1/system.d
 dbusfiles.files = bluez-qt.conf
 
 INSTALLS += dbusfiles
