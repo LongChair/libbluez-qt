@@ -21,7 +21,7 @@ TARGET = bluez-qt5
 QT += dbus
 CONFIG += link_pkgconfig \
 	debug
-OTHER_FILES += bluez-qt.conf \
+OTHER_FILES += \
 	manager.xml \
 	device.xml \
 	audiosrc.xml \
@@ -74,7 +74,5 @@ pkgconfig.files = bluez-qt5.pc
 
 INSTALLS += pkgconfig
 
-dbusfiles.path = $$INSTALL_ROOT$$PREFIX/etc/dbus-1/system.d
-dbusfiles.files = bluez-qt.conf
 
 INSTALLS += dbusfiles
