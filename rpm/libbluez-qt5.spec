@@ -58,7 +58,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %{_libdir}/libbluez-qt5.so.*
 %{_libdir}/qt5/qml/Bluetooth/*
-%{_sysconfdir}/dbus-1/system.d/bluez-qt.conf
 
 %files devel
 %defattr(-,root,root,-)
