@@ -12,6 +12,10 @@ include(obex/obex.pri)
 
 VERSION+= 0.1.19
 
+isEmpty(PREFIX) {
+  PREFIX=/usr
+}
+
 TEMPLATE = lib
 TARGET = bluez-qt5
 QT += dbus
